@@ -10,6 +10,7 @@
 /* Using CSS variable */
 :root{
     --white: #fff;
+    --grey: #4b5163;
 }
 body{
     font-family: 'Nunito', sans-serif;
@@ -25,7 +26,7 @@ h1{
 
 a{
     text-decoration: none;
-    color: #4b5163;
+    color: var(--grey);
 }
 
 #main {
@@ -82,5 +83,15 @@ object-fit: cover;
     display: inline-block;
     margin-top: 25px;
     border: 2px solid var(--white);
-
+    padding: 10px 30px;
+    background-color: var(--grey);
+    /* "a" elements will not inherit text color like other text elements will. Must apply directly. */
+    color: var(--white);
+    border-radius: 10px;
+    font-size: 20px;
+    opacity: 0.8;
 }
+#click:hover{
+    transform: scale(0.95);
+}
+
