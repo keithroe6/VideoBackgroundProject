@@ -7,6 +7,10 @@
     box-sizing: border-box; 
 }
 
+/* Using CSS variable */
+:root{
+    --white: #fff;
+}
 body{
     font-family: 'Nunito', sans-serif;
     line-height: 1.5;
@@ -68,7 +72,15 @@ object-fit: cover;
 }
 
 #content{
-    color: #fff;
+    color: var(--white);
     z-index: 2;
     text-align: center;
+}
+
+#click{
+    /* Allows you to set top and bottom margin as well as the width and height. This is not the case for inline elements. */
+    display: inline-block;
+    margin-top: 25px;
+    border: 2px solid var(--white);
+
 }
