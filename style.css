@@ -46,3 +46,29 @@ a{
     background-size: cover;
 }
 
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* width: 100%; */
+
+
+/* The object fit property determines how a video or image is resized to fit inside it's container. Setting the value to "cover" causes the video to maintain aspect ratio and fill the given dimentsion */
+object-fit: cover;
+}
+
+#cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+}
+
+#content{
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+}
